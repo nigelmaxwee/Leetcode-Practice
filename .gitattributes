@@ -1,6 +1,3 @@
 *.sql linguist-detectable=true
 *.sql linguist-language=sql
 *.sql text
-*.pgsql linguist-detectable=true
-*.pgsql linguist-language=SQL
-*.pgsql text
