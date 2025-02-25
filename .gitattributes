@@ -1,2 +1,2 @@
-*.mysql.sql linguist-language=MySQL
-*.pgsql.sql linguist-language=PostgreSQL
+*.sql linguist-detectable=true
+*.sql linguist-language=sql
