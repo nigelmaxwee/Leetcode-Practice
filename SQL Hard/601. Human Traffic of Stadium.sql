@@ -1,10 +1,12 @@
 # Write your MySQL query statement below
 WITH ConsecutiveStadium AS (
-    SELECT id AS id1, visit_date, people AS people1,
-           LEAD(id, 1) OVER (ORDER BY id) AS id2,
-           LEAD(id, 2) OVER (ORDER BY id) AS id3,
-           LEAD(people, 1) OVER (ORDER BY id) AS people2,
-           LEAD(people, 2) OVER (ORDER BY id) AS people3
+    SELECT visit_date,
+    id AS id1, 
+    LEAD(id, 1) OVER (ORDER BY id) AS id2,
+    LEAD(id, 2) OVER (ORDER BY id) AS id3, 
+    people AS people1,
+    LEAD(people, 1) OVER (ORDER BY id) AS people2,
+    LEAD(people, 2) OVER (ORDER BY id) AS people3
     FROM Stadium
 )
 SELECT id, visit_date, people
