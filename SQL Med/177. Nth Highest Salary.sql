@@ -1,3 +1,4 @@
+# Write your MySQL query statement below
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
 DECLARE X INT; # Semi-colons needed within begin-end statements to terminate
